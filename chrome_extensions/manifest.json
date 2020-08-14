@@ -1,0 +1,16 @@
+{
+  "name": "Test",
+  "version": "0.0",
+  "description": "tests.",
+  "manifest_version": 2,
+  "permissions": ["tabs","<all_urls>"],
+  
+  "content_scripts": [{
+      "js": ["content.js"],
+      "matches": ["<all_urls>"],
+      "all_frames": true
+  }],
+  "background":{
+      "scripts":["background.js"]
+  }
+}
